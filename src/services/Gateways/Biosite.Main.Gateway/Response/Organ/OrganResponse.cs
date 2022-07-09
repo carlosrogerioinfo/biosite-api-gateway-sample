@@ -1,9 +1,8 @@
-﻿using Biosite.Core.Response;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace Biosite.Main.Gateway.Response.Organ
 {
-    public class OrganResponse// : ResponseError
+    public class OrganResponse
     {
         [JsonPropertyName("id")]
         public string Id { get; set; }

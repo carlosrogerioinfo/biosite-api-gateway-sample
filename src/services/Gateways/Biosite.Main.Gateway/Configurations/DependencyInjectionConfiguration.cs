@@ -6,23 +6,23 @@ namespace Biosite.Analysis.Gateway.Configurations
 {
     public static class DependencyInjectionConfiguration
     {
-        public static IServiceCollection AddDependencyInjectionConfiguration(this IServiceCollection services)
+        public static IServiceCollection AddDependencyInjectionConfiguration(this IServiceCollection services, IConfiguration configuration = null)
         {
             services.AddHttpClient<AuthenticationService, AuthenticationService>(config =>
             {
-                config.BaseAddress = new Uri("http://authentication.sampleapicore.uni5.net");
+                config.BaseAddress = new Uri(configuration.GetSection("BaseUrl")["AuthenticationApi"]);
                 config.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             });
 
             services.AddHttpClient<BiomarkerService, BiomarkerService>(config =>
             {
-                config.BaseAddress = new Uri("http://biomarker.sampleapicore.uni5.net");
+                config.BaseAddress = new Uri(configuration.GetSection("BaseUrl")["BiomarkerApi"]);
                 config.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             });
 
             services.AddHttpClient<OrganService, OrganService>(config =>
             {
-                config.BaseAddress = new Uri("http://organ.sampleapicore.uni5.net");
+                config.BaseAddress = new Uri(configuration.GetSection("BaseUrl")["OrganApi"]);
                 config.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             });
 

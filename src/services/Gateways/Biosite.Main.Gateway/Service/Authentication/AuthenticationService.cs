@@ -21,10 +21,24 @@ namespace Biosite.Analysis.Gateway.Services.Authentication
             var response = await _httpClient
                 .PostJsonAsync($"login", request);
 
-            if (!ResponseErrorHandling(response))
-                return await response.Content.ReadJsonAsync<UserResponse>("error");
+            if (!ResponseErrorHandling(response)) 
+                return default;
 
             return await response.Content.ReadJsonAsync<UserResponse>("data");
+        }
+
+        public async Task<ICollection<UserResponse>> GetAll(string token)
+        {
+            _httpClient.DefaultRequestHeaders.Clear();
+            _httpClient.AddTokenAuthorization(token);
+
+            var response = await _httpClient
+               .GetJsonAsync($"user/crud/get");
+
+            if (!ResponseErrorHandling(response))
+                return default;
+
+            return await response.Content.ReadJsonAsync<ICollection<UserResponse>>("data");
         }
     }
 }

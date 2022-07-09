@@ -18,7 +18,7 @@ namespace Biosite.Analysis.Gateway
 
             services.AddSwaggerConfiguration();
 
-            services.AddDependencyInjectionConfiguration();
+            services.AddDependencyInjectionConfiguration(Configuration);
 
             services.AddJWTBearerConfiguration();
         }

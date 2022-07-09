@@ -4,6 +4,7 @@ using Biosite.Core.Response;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -93,6 +94,19 @@ namespace Biosite.Core.Extensions
                 throw new CustomHttpRequestException(nameof(client));
 
             return await client.DeleteAsync(string.Concat(client.BaseAddress, url));
+        }
+
+        public static void AddTokenAuthorization(this HttpClient client, string token)
+        {
+            try
+            {
+                var jwt = (string.IsNullOrEmpty(token) ? string.Empty : token.Replace("bearer", string.Empty).Replace("Bearer", string.Empty).Trim());
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", jwt);
+            }
+            catch
+            {
+                throw new CustomHttpRequestException(nameof(client));
+            }
         }
 
     }

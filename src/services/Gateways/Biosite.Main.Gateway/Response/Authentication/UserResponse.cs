@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace Biosite.Main.Gateway.Response.Authentication
 {
-    public class UserResponse : ResponseError
+    public class UserResponse
     {
         [JsonPropertyName("id")]
         public string Id { get; set; }
@@ -17,7 +17,7 @@ namespace Biosite.Main.Gateway.Response.Authentication
         [JsonPropertyName("age")]
         public int Age { get; set; }
 
-        [JsonPropertyName("gender")]
+        [JsonPropertyName("genderDescription")]
         public string Gender { get; set; }
 
         [JsonPropertyName("pregnant")]

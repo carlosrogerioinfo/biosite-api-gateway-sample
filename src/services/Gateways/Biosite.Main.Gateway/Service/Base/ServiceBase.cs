@@ -6,7 +6,7 @@ namespace Biosite.Main.Gateway.Service.Base
 {
     public abstract class ServiceBase : Notifiable
     {
-        protected virtual bool ResponseErrorHandling(HttpResponseMessage response)
+        protected bool ResponseErrorHandling(HttpResponseMessage response)
         {
             switch ((int)response.StatusCode)
             {
@@ -25,6 +25,18 @@ namespace Biosite.Main.Gateway.Service.Base
 
         private void SetError(HttpResponseMessage response)
         {
+            if ((int)response.StatusCode == 401)
+            {
+                AddNotification("Autenticação", "Usuário não autorizado");
+                return;
+            }
+
+            if ((int)response.StatusCode == 403)
+            {
+                AddNotification("Autenticação", "Usuário sem permissão para efetuar essa requisição");
+                return;
+            }
+
             var notifications = response.Content.ReadJsonAsync<ResponseError>("error").Result;
             foreach (var item in notifications.Errors)
             {

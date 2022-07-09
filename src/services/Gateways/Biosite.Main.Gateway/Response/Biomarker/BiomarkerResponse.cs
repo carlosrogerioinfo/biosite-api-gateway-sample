@@ -1,9 +1,8 @@
-﻿using Biosite.Core.Response;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace Biosite.Main.Gateway.Response.Biomarker
 {
-    public class BiomarkerResponse// : ResponseError
+    public class BiomarkerResponse
     {
         [JsonPropertyName("id")]
         public string Id { get; set; }

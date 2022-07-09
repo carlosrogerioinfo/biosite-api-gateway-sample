@@ -23,5 +23,13 @@ namespace Biosite.Analysis.Gateway.Controllers
         {
             return await Response(await _service.Authentication(requestCommand), _service.Notifications);
         }
+
+        [HttpGet]
+        [Route("user/get")]
+        [ProducesResponseType(typeof(IEnumerable<UserResponse>), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetAll()
+        {
+            return await Response(await _service.GetAll(Request.Headers["Authorization"]), _service.Notifications);
+        }
     }
 }
