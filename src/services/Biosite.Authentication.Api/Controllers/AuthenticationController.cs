@@ -49,7 +49,7 @@ namespace Biosite.Api.Controllers
                     name = data.Name,
                     email = data.Email,
                     age = data.Age,
-                    gender = data.GenderDescription,
+                    genderDescription = data.GenderDescription,
                     pregnant = data.IsPregnant,
                     height = data.Height,
                     weight = Math.Round(data.Weight, 2),
