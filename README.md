@@ -1,4 +1,4 @@
-# Biosite API and Gateway Sctructure
+# Biosite - Estrutura de uma aplicação API com Gateway e CQRS (Parcialmente implementada)
 
 <p>
 Projeto de aplicação distribuída com utilização de api gateway para isolamento das APIs, este projeto tem a intenção de servir de modelo para desenvolvedores que estão aprendendo desenvolvimento de backends com comunicação entre APIs via gateway na plataforma Asp.Net Core usando linguagem C#.
