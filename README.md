@@ -31,7 +31,7 @@ Mas, sinta-se a vontade para usar o código e implementar as outras chamadas do 
 
 ## Banco de dados
 
-<p>Para este projeto foi usado o banco de dados SQL Server, mas não se preocupe, eu vou te passar um serviço de hospedagem onde tanto o banco de dados SQL server quanto serviço de hospedagem de aplicações asp.net e asp.net core são gratuítos. Basta você cadastrar sua conta criar seu database e executar os scripts que estão no projeto.</p>
+Para este projeto foi usado o banco de dados SQL Server, mas não se preocupe, eu vou te passar um serviço de hospedagem onde tanto o banco de dados SQL server quanto serviço de hospedagem de aplicações asp.net e asp.net core são gratuítos. Basta você cadastrar sua conta criar seu database e executar os scripts que estão no projeto.
 
 ### Script I - Criação das tabelas <br/>
 https://github.com/carlosrogerioinfo/biosite-api-gateway-sample/blob/main/script-database/script-criacao-tabelas.sql
@@ -42,10 +42,8 @@ https://github.com/carlosrogerioinfo/biosite-api-gateway-sample/blob/main/script
 
 ## Hospedagem gratuita (Asp.Net Core / SQL Server)
 
-<p>
 Hospedagem gratuita para aplicações asp.net e asp.net core e com banco de dados sql server incluídos gratuitamente.
 <a href="https://somee.com/" target="_blank">https://somee.com/</a>
-</p>
 
 ## Links úteis
 <a href="https://www.markdownguide.org/basic-syntax/#overview" target="_blank">Sintaxe Básica Markdown</a>
