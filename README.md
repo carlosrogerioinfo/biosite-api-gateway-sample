@@ -1,7 +1,7 @@
-# Biosite - Estrutura de uma aplicação API com Gateway e CQRS (Parcialmente implementada)
+# Estrutura de uma aplicação API com Gateway e CQRS (Parcialmente implementada)
 
 <p>
-Projeto de aplicação distribuída com utilização de api gateway para isolamento das APIs, este projeto tem a intenção de servir de modelo para desenvolvedores que estão aprendendo desenvolvimento de backends com comunicação entre APIs via gateway na plataforma Asp.Net Core usando linguagem C#.
+O projeto Biosite é um exemplo de estrutura de aplicação distribuída com utilização de **API**, **Gateways** para isolamento das APIs, possui uma implementação básica e muito funcional do uso do **CRQS** (Command Query Responsibility Segregation), uso de **VO** (Value Objects) e uso de **Notification Pattern** e muito mais, este projeto tem a intenção de servir de modelo para desenvolvedores iniciantes que estão aprendendo desenvolvimento de backends com comunicação entre APIs via gateway na plataforma Asp.Net Core usando linguagem C#.
 
 A parte de comunicação entre a api gateway de exemplo com os endpoints das outras APIs, não está totalmente concluída, no projeto atual, a gateway se comunica com a API de autenticação para realizar o login e obter o token, e também está realizando comunicação com as APIs de biomarcadores e órgãos, trazendo todos os registros apenas. Os demais endpoints tanto da API de autenticação, quanto das APIs de biomarcadores e orgãos necessitam ser implementados. Aos poucos, a medida que sobrar um tempinho, eu vou adicionando.
 
