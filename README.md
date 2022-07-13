@@ -1,12 +1,10 @@
 # Estrutura de uma aplicação API com Gateway e CQRS
 
-<p>
 O projeto **Biosite** é um exemplo de estrutura de aplicação distribuída com utilização de **API**, **Gateways** para isolamento das APIs, possui uma implementação básica e muito funcional do uso do **CRQS** (Command Query Responsibility Segregation), uso de **VO** (Value Objects) e uso de **Notification Pattern** e muito mais, este projeto tem a intenção de servir de modelo para desenvolvedores iniciantes que estão aprendendo desenvolvimento de backends com comunicação entre APIs via gateway na plataforma Asp.Net Core usando linguagem C#.
 
 A parte de comunicação entre a api gateway de exemplo com os endpoints das outras APIs, não está totalmente concluída, no projeto atual, a gateway se comunica com a API de autenticação para realizar o login e obter o token, e também está realizando comunicação com as APIs de biomarcadores e órgãos, trazendo todos os registros apenas. Os demais endpoints tanto da API de autenticação, quanto das APIs de biomarcadores e orgãos necessitam ser implementados. Aos poucos, a medida que sobrar um tempinho, eu vou adicionando.
 
 Mas, sinta-se a vontade para usar o código e implementar as outras chamadas do gateway para os demais endpoints de suas respectivas APIs. Obviamente simplificamos o projeto de modo que foi criado apenas uma única api gateway para chamar os endpoints das outras APIs, mas, sinta-se a vontade para incluir as outras APIs gateway como forma de aprendicado para você.
-</p>
 
 ## Estrutura
 ![image](https://user-images.githubusercontent.com/72615280/177876226-bddea19f-90cd-4bd8-b782-8b7e8af1032b.png)
