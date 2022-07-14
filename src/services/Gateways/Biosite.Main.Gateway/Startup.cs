@@ -14,8 +14,6 @@ namespace Biosite.Analysis.Gateway
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAutoMapperConfiguration(); 
-            
             services.AddWebApiConfiguration();
 
             services.AddSwaggerConfiguration();

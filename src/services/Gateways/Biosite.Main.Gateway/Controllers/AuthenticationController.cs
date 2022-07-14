@@ -2,7 +2,6 @@
 using Biosite.Analysis.Gateway.Services.Authentication;
 using Biosite.Core.Controller;
 using Biosite.Main.Gateway.Response.Authentication;
-using Health.Library.Domain.Commands.Handlers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Biosite.Analysis.Gateway.Controllers
@@ -12,7 +11,7 @@ namespace Biosite.Analysis.Gateway.Controllers
     {
         private readonly AuthenticationService _service;
 
-        public AuthenticationController(AuthenticationService service, CholecalciferolSimpleCalculeCommandHandler cholecalciferolCommandHandler)
+        public AuthenticationController(AuthenticationService service)
         {
             _service = service;
         }
