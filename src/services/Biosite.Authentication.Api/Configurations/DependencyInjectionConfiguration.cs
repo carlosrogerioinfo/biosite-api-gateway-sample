@@ -18,7 +18,7 @@ namespace Biosite.Authentication.Api.Configurations
             services.AddScoped<IUow, Uow>();
 
             services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<UserCommandHandler, UserCommandHandler>();
+            services.AddScoped<UserCommandHandler>();
 
             return services;
         }

@@ -1,13 +1,13 @@
-﻿using Biosite.Domain.Profiles;
+﻿using Health.Library.Domain.Profiles;
 
-namespace Biosite.Biomarkers.Api.Configurations
+namespace Biosite.Analysis.Gateway.Configurations
 {
     public static class AutoMapperConfiguration
     {
         public static IServiceCollection AddAutoMapperConfiguration(this IServiceCollection services)
         {
             services.AddAutoMapper(
-                typeof(BiomarkerProfile)
+                typeof(CholecalciferolProfile)
             );
 
             return services;

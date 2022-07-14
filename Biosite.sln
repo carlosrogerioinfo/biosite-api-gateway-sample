@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Gateways", "1. Gateways"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Biosite.Main.Gateway", "src\services\Gateways\Biosite.Main.Gateway\Biosite.Main.Gateway.csproj", "{A18A73ED-5664-4D67-8A45-8318D4789E26}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Health.Library.Domain", "..\health-library\src\building blocks\Health.Library.Domain\Health.Library.Domain.csproj", "{08D8AA30-04E5-4ABF-A752-98AAF2BEE166}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{A18A73ED-5664-4D67-8A45-8318D4789E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A18A73ED-5664-4D67-8A45-8318D4789E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A18A73ED-5664-4D67-8A45-8318D4789E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D8AA30-04E5-4ABF-A752-98AAF2BEE166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D8AA30-04E5-4ABF-A752-98AAF2BEE166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D8AA30-04E5-4ABF-A752-98AAF2BEE166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D8AA30-04E5-4ABF-A752-98AAF2BEE166}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{3A6EB9A1-CBAF-43D6-A164-36194BA21986} = {543DE8D6-F1F9-45B8-8DEC-77E293293F1A}
 		{78C138DA-68BA-4543-B410-81425B0999DD} = {F3699918-FB55-4D72-90C0-671916179A94}
 		{A18A73ED-5664-4D67-8A45-8318D4789E26} = {B7569A35-A565-4E60-BEED-E8836F6CBE13}
+		{08D8AA30-04E5-4ABF-A752-98AAF2BEE166} = {D2AFE35D-8503-4F72-96AD-47A269C05F42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4FBD8D3D-99A7-4789-8528-6CF986DF3242}

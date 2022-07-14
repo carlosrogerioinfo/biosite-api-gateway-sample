@@ -23,6 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\..\..\..\..\health-library\src\building blocks\Health.Library.Domain\Health.Library.Domain.csproj" />
 	  <ProjectReference Include="..\..\..\building blocks\Biosite.Core\Biosite.Core.csproj" />
 	</ItemGroup>
 
